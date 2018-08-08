@@ -1,27 +1,27 @@
 const imgage = document.getElementById('pic');
-let namberOfPicture = 0;
-let pictureGallery = [
+const pictureGallery = [
     "img/img1.jpg",
     "img/img2.jpg",
     "img/img3.jpg",
     "img/img4.jpg",
     "img/img5.jpg"
 ];
+let numberOfPicture = 0;
 
 function next() {
-    namberOfPicture++;
-    if (namberOfPicture === 5) {
-        namberOfPicture = 0;
+    numberOfPicture++;
+    if (numberOfPicture === 5) {
+        numberOfPicture = 0;
     }
-    imgage.src = pictureGallery[namberOfPicture];
+    imgage.src = pictureGallery[numberOfPicture];
 }
 
 function prev() {
-    namberOfPicture--;
-    if (namberOfPicture === -1) {
-        namberOfPicture = 4;
+    numberOfPicture--;
+    if (numberOfPicture === -1) {
+        numberOfPicture = 4;
     }
-    imgage.src = pictureGallery[namberOfPicture];
+    imgage.src = pictureGallery[numberOfPicture];
 }
 
 function play() {
