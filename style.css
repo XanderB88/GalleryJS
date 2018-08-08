@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    position: relative;
+    margin: 50px auto;
+    width: 600px;
+    height: 460px;
+    border-radius: 5px;
+}
+
+#picture {
+    position: absolute;
+    margin: 15px 0 auto;
+    width: 100%;
+    height: auto;
+}
+
+#pic {
+    position: relative;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+    /*border-radius: 60px;*/
+}
+
+.prevPicture {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    margin-top: 380px;
+    margin-left: 185px;
+    border-radius: 9px;
+    font-size: 20px;
+    background: whitesmoke url("icons/leftarrow.png") no-repeat 12px;
+}
+
+.playPicture {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    margin-top: 380px;
+    margin-left: 263px;
+    border-radius: 9px;
+    font-size: 20px;
+    background: whitesmoke url("icons/forward.png") no-repeat 12px;
+}
+
+.nextPicture {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    margin-top: 380px;
+    margin-left: 340px;
+    border-radius: 9px;
+    font-size: 20px;
+    background: whitesmoke url("icons/rightarrow.png") no-repeat 12px;
+}
+
+.prevPicture:focus {
+    outline: none;
+}
+
+.playPicture:focus {
+    outline: none;
+}
+
+.nextPicture:focus {
+    outline: none;
+}
+
